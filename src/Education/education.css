@@ -1,0 +1,10 @@
+.divider {
+  background-color: black;
+  width: 2px;
+  height: 260px;
+}
+.deschead {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 700;
+  color: white;
+}
