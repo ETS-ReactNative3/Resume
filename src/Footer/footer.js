@@ -12,7 +12,7 @@ function Footer() {
   return (
     <div className="row footer">
 
-      <div className='col-lg-8 col-md-8 col-sm-6 text-center' style={{ textAlign: 'start' }}>
+      <div className='col-lg-8 col-md-8 col-sm-6 text-center' style={{ textAlign: 'start' }}><br />
         <h5 className="text-white">Get In Touch With Me</h5><br />
         <div className="row d-flex justify-content-center">
           <div className="col-lg-6 col-md-12 col-sm-12">
@@ -23,7 +23,7 @@ function Footer() {
           <a className="details col-lg-5 col-md-12 col-sm-12"><br></br><HomeIcon color="action" style={{ fontSize: 35, color: 'white' }} />A-14,Satya CHS,Opposit MTNL,S.V.Rd,Kandivali(West),Mumbai-400067</a>
         </div>
       </div>
-      <div className='col-lg-4 col-md-4 col-sm-6 align-self-center text-center'>
+      <div className='col-lg-4 col-md-4 col-sm-6 pb-3 align-self-center text-center'>
         <br></br>
         <a href="https://www.linkedin.com/in/bhavesh-bellaney-7b8553186">
           <LinkedInIcon color="action" style={{ fontSize: 35, color: 'white' }} />

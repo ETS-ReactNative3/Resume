@@ -3,10 +3,17 @@ import './navbar.css';
 import { NavLink } from 'react-router-dom';
 
 function Sections() {
+  const handleCollapse = () => {
+    console.log("handleCollapse");
+    var nav = document.getElementById("navbarSupportedContent");
+    var btn = document.getElementById("navbarBtn");
+    nav.classList.remove("show");
+    btn.classList.add("collapsed");
+  };
   return (
     <nav class="navbar navbar-expand-lg">
 
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler" id="navbarBtn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
 
@@ -16,40 +23,40 @@ function Sections() {
             <NavLink to="/description/educ" exact className="font-weight-bold h5 nav-link" activeStyle={{
               borderBottom: '2px solid #e7032c',
               textDecoration: 'none', width: 'fit-content'
-            }}>Education</NavLink>
+            }} onClick={handleCollapse}>Education</NavLink>
           </li>
           <li class="nav-item">
             <NavLink to="/description/cert" exact className="font-weight-bold h5  nav-link" activeStyle={{
               borderBottom: '2px solid #e7032c',
               textDecoration: 'none', width: 'fit-content'
-            }}>Certification</NavLink>
+            }} onClick={handleCollapse}>Certification</NavLink>
           </li>
           <li class="nav-item">
             <NavLink to="/description/projects" exact className="font-weight-bold h5  nav-link" activeStyle={{
               borderBottom: '2px solid #e7032c',
               textDecoration: 'none', width: 'fit-content'
-            }}>Projects</NavLink>
+            }} onClick={handleCollapse}>Projects</NavLink>
           </li>
           <li class="nav-item">
             <NavLink to="/description/experience" exact className="font-weight-bold h5 nav-link" activeStyle={{
               borderBottom: '2px solid #e7032c',
               textDecoration: 'none', width: 'fit-content'
-            }}>Experience</NavLink>
+            }} onClick={handleCollapse}>Experience</NavLink>
           </li>
           <li class="nav-item">
             <NavLink to="/description/skills" exact className="font-weight-bold h5 nav-link" activeStyle={{
               borderBottom: '2px solid #e7032c',
               textDecoration: 'none', width: 'fit-content'
-            }}>Skills</NavLink>
+            }} onClick={handleCollapse}>Skills</NavLink>
           </li>
           <li class="nav-item">
             <NavLink to="/description/interest" exact className="font-weight-bold h5 nav-link" activeStyle={{
               borderBottom: '2px solid #e7032c',
               textDecoration: 'none', width: 'fit-content'
-            }}>Interest</NavLink>
+            }} onClick={handleCollapse}>Interest</NavLink>
           </li>
           <li class="nav-item">
-            <a href="https://drive.google.com/file/d/1JQfmttZMDoMtaBwuw50jppCbqnjs_EJQ/view?usp=sharing" target="_blank" className="font-weight-bold h5 nav-link">View PDF</a>
+            <a href="https://drive.google.com/file/d/1JQfmttZMDoMtaBwuw50jppCbqnjs_EJQ/view?usp=sharing" target="_blank" className="font-weight-bold h5 nav-link" onClick={handleCollapse}>View PDF</a>
           </li>
         </ul>
       </div>
