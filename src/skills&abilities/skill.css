@@ -1,7 +1,7 @@
 .divsk {
   background-color: black;
   width: 2px;
-  height: 160px;
+  height: inherit;
 }
 .skill {
   font-weight: 500;

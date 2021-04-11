@@ -1,7 +1,7 @@
 .divcert {
   background-color: black;
   width: 2px;
-  height: 330px;
+  height: inherit;
   margin-left: 60px;
 }
 .h3 {

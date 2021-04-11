@@ -1,6 +1,9 @@
+.pict {
+  display: flex;
+  justify-content: center;
+}
 .hexagon {
   position: relative;
-  left: 100px;
   width: 200px;
   height: 115.47px;
   margin: 57.74px 0;
@@ -82,7 +85,7 @@
 }
 
 .name {
-  left: 150px;
+  text-align: center;
 }
 
 .fullname {
@@ -92,8 +95,44 @@
   letter-spacing: 3px;
 }
 
-.divintro {
-  background-color: black;
-  width: 2px;
-  height: 220px;
+.about {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .name {
+    margin-bottom: 40px;
+  }
+  .divintro {
+    background-color: black;
+    width: -webkit-fill-available;
+    height: 2px;
+    margin-bottom: 40px;
+  }
+  /* .about {
+    left: 0px;
+    text-align: center;
+  } */
+}
+@media (min-width: 768px) {
+  .divintro {
+    display: none;
+  }
+  .intro {
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .name {
+    text-align: start;
+  }
+  .divintro {
+    background-color: black;
+    width: 2px;
+    height: 220px;
+    display: block;
+  }
+  .intro {
+    align-items: center;
+  }
 }
