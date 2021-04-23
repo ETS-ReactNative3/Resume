@@ -56,7 +56,7 @@ function Sections() {
             }} onClick={handleCollapse}>Interest</NavLink>
           </li>
           <li class="nav-item">
-            <a href="https://drive.google.com/file/d/1TcPy-ei0_aY6HG9qZEyQC9vf3uTAIXwz/view?usp=sharing" target="_blank" className="font-weight-bold h5 nav-link" onClick={handleCollapse}>View PDF</a>
+            <a href="https://drive.google.com/file/d/1mmzMaUvpnaD_1mIZtE3wWJNQKr3zPOih/view?usp=sharing" target="_blank" className="font-weight-bold h5 nav-link" onClick={handleCollapse}>View PDF</a>
           </li>
         </ul>
       </div>
