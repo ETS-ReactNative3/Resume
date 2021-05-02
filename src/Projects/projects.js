@@ -7,7 +7,7 @@ import Flash from 'react-reveal/Flash';
 class Projects extends Component {
   state = {
     projects: [
-      { index: '1', title: 'SHOPPING WEBSITE', year: 'OCT 2020 - NOV 2020', details: ["- Created a website for online shopping", "- Created a user-friendly voting system using PHP and MySQL", "- Spent a sufficiently high amount of time on the UI and UX of the project"], githubrepo: "https://github.com/Bhavesh56789/Shopping-Website", hosted: "https://queasiest-detention.000webhostapp.com/" },
+      { index: '1', title: 'SHOPPING WEBSITE', year: 'OCT 2020 - NOV 2020', details: ["- Created a website for online shopping", "- Created a system using PHP and MySQL", "- Spent a sufficiently high amount of time on the UI and UX of the project"], githubrepo: "https://github.com/Bhavesh56789/Shopping-Website", hosted: "https://queasiest-detention.000webhostapp.com/" },
       { index: '2', title: 'Percentage Calculator', year: 'NOV 2019 - DEC 2019', details: ["- Created a mobile application to compute the percentage of the input numbers", "- It was created using Cordova, hence works on iOS as well as Android", "- The GitHub repository for the project source is here"], githubrepo: "https://github.com/Bhavesh56789/Percentage-Calculator" }
     ]
   }

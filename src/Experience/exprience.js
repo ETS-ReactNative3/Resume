@@ -8,7 +8,7 @@ class Experience extends Component {
     experience: [
       {
         index: '1', title: 'HeathLink Technologies Pvt. Ltd', year: 'JUNE 2019-JULY 2019', place: 'Intern',
-        details: ["- Exposed to the basics of web development<br/>- Learnt HTML, CSS, Javascript, Bootstrap, PHP"], certificate: "https://drive.google.com/file/d/1Gis1WLuZv9dEy8ByweK3zVhff3T9IjYS/view?usp=sharing"
+        details: ["- Exposed to the basics of web development - Learnt HTML, CSS, Javascript, Bootstrap, PHP"], certificate: "https://drive.google.com/file/d/1Gis1WLuZv9dEy8ByweK3zVhff3T9IjYS/view?usp=sharing"
       }
     ]
   }
