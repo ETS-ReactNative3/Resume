@@ -6,7 +6,7 @@ import Roll from 'react-reveal/Roll';
 class Skills extends Component {
   state = {
     skillsabilities: [
-      { index: '1', skab: '--Programming Languages Known - C, C++, Java, Python' },
+      { index: '1', skab: '--Programming Languages Known - C, Java, Python' },
       { index: '2', skab: '--Web/ App Development Technologies - HTML, CSS, JavaScript,Bootstrap, PHP, React, Flutter' },
       { index: '3', skab: '--Backend Technologies - Node.js, Mysql, Mongodb' },
       { index: '5', skab: '--Teamwork, Time Management, Adaptability, Creativity, Problem-Solving' }
