@@ -20,16 +20,22 @@ function Sections() {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <NavLink to="/description/educ" exact className="font-weight-bold h5 nav-link" activeStyle={{
+            <NavLink to="/description/education" exact className="font-weight-bold h5 nav-link" activeStyle={{
               borderBottom: '2px solid #e7032c',
               textDecoration: 'none', width: 'fit-content'
             }} onClick={handleCollapse}>Education</NavLink>
           </li>
           <li class="nav-item">
-            <NavLink to="/description/cert" exact className="font-weight-bold h5  nav-link" activeStyle={{
+            <NavLink to="/description/certifications" exact className="font-weight-bold h5  nav-link" activeStyle={{
               borderBottom: '2px solid #e7032c',
               textDecoration: 'none', width: 'fit-content'
             }} onClick={handleCollapse}>Certification</NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink to="/description/publications" exact className="font-weight-bold h5  nav-link" activeStyle={{
+              borderBottom: '2px solid #e7032c',
+              textDecoration: 'none', width: 'fit-content'
+            }} onClick={handleCollapse}>Publications</NavLink>
           </li>
           <li class="nav-item">
             <NavLink to="/description/projects" exact className="font-weight-bold h5  nav-link" activeStyle={{
@@ -56,7 +62,7 @@ function Sections() {
             }} onClick={handleCollapse}>Interest</NavLink>
           </li>
           <li class="nav-item">
-            <a href="https://drive.google.com/file/d/1MXxg5-E9IvbGeUZR87JgYYBXhdUyxGJv/view?usp=sharing" target="_blank" className="font-weight-bold h5 nav-link" onClick={handleCollapse}>View PDF</a>
+            <a href="https://drive.google.com/file/d/1PUSkl1aIchonXkKcnPO5_iMqr-Xe4Won/view?usp=sharing" target="_blank" className="font-weight-bold h5 nav-link" onClick={handleCollapse}>View PDF</a>
           </li>
         </ul>
       </div>

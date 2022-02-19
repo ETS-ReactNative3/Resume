@@ -27,7 +27,7 @@ class Certification extends Component {
           {this.state.certificate.map(edct => {
             let link;
             if (edct.badge) {
-              link = (<div><Roll bottom cascade><span>-- Certificate is here </span></Roll><Roll bottom cascade><span><a href={edct.certificate} target="_blank">here</a></span></Roll><Roll bottom cascade><span> and badge is </span></Roll><Roll bottom cascade><span><a href={edct.badge} target="_blank">here</a></span>
+              link = (<div><Roll bottom cascade><span>-- Certificate is </span></Roll><Roll bottom cascade><span><a href={edct.certificate} target="_blank">here</a></span></Roll><Roll bottom cascade><span> and badge is </span></Roll><Roll bottom cascade><span><a href={edct.badge} target="_blank">here</a></span>
               </Roll></div>)
             }
             else {

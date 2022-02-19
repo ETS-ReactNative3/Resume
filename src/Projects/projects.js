@@ -7,8 +7,9 @@ import Flash from 'react-reveal/Flash';
 class Projects extends Component {
   state = {
     projects: [
-      { index: '1', title: 'SHOPPING WEBSITE', year: 'OCT 2020 - NOV 2020', details: ["- Created a website for online shopping", "- Created a system using PHP and MySQL", "- Spent a sufficiently high amount of time on the UI and UX of the project"], githubrepo: "https://github.com/Bhavesh56789/Shopping-Website", hosted: "https://queasiest-detention.000webhostapp.com/" },
-      { index: '2', title: 'Percentage Calculator', year: 'NOV 2019 - DEC 2019', details: ["- Created a mobile application to compute the percentage of the input numbers", "- It was created using Cordova, hence works on iOS as well as Android", "- The GitHub repository for the project source is here"], githubrepo: "https://github.com/Bhavesh56789/Percentage-Calculator" }
+      { index: '1', title: 'MOVIE RECOMMENDATION SYSTEM', year: 'MAR 2021 - APR 2021', details: ["- Created a OTT website with recommendation system.", "- Created using MERN STACK.", "-Spent a sufficiently high amount of time on the UI and UX of the project with a Responsive design."], githubrepofront: "https://github.com/Bhavesh56789/Apex-movies-Frontend", githubrepoback: "https://github.com/Bhavesh56789/Apex-movies-backend", },
+      { index: '2', title: 'SHOPPING WEBSITE', year: 'OCT 2020 - NOV 2020', details: ["- Created a website for online shopping", "- Created a system using PHP and MySQL", "- Spent a sufficiently high amount of time on the UI and UX of the project"], githubrepo: "https://github.com/Bhavesh56789/Shopping-Website", hosted: "https://queasiest-detention.000webhostapp.com/" },
+      { index: '3', title: 'Percentage Calculator', year: 'NOV 2019 - DEC 2019', details: ["- Created a mobile application to compute the percentage of the input numbers", "- It was created using Cordova, hence works on iOS as well as Android", "- The GitHub repository for the project source is here"], githubrepo: "https://github.com/Bhavesh56789/Percentage-Calculator" }
     ]
   }
   render() {
@@ -26,6 +27,10 @@ class Projects extends Component {
               let link;
               if (proj.hosted) {
                 link = (<div><Roll bottom cascade><span>- The GitHub repository for the project source is </span></Roll><Roll bottom cascade><span><a href={proj.githubrepo} target="_blank">here</a></span></Roll><Roll bottom cascade><span> and is hosted </span></Roll><Roll bottom cascade><span><a href={proj.hosted} target="_blank">here</a></span>
+                </Roll></div>)
+              }
+              else if (proj.githubrepofront && proj.githubrepoback) {
+                link = (<div><Roll bottom cascade><span>- The GitHub repository for the frontend project source is </span></Roll><Roll bottom cascade><span><a href={proj.githubrepofront} target="_blank">here</a></span></Roll><Roll bottom cascade><span> and for backend is </span></Roll><Roll bottom cascade><span><a href={proj.githubrepoback} target="_blank">here</a></span>
                 </Roll></div>)
               }
               else {
